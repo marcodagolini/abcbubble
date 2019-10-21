@@ -65,7 +65,10 @@
 			console.log("sending");
 			var bubblePayment = {"json":{"type":"vertical","tag":"payment","elements":[{"type":"text","text":"Apple Pay Request"}]},"metadata":[{"type":"BusinessChatMessage","receivedMessage":{"style":"icon","subtitle":"Complete Purchase: iCloud Upgrade","title":"2TB Tier","imageURL":"https://chrisjamestest.neocities.org/img/lplogo.png"}},{"type":"ConnectorPaymentRequest","apple":{"data":{"version":"1.0","payment":{"paymentRequest":{"applePay":{"merchantIdentifier":"merchant.com.example.abcdemo","merchantCapabilities":["supports3DS","supportsCredit","supportsDebit"],"supportedNetworks":["amex","visa","mastercard"]},"lineItems":[{"label":"iCloud Subscript 2TB at 9.99/month","amount":"9.99","type":"pending"}],"total":{"label":"iCloud Subscript 2TB at 9.99/month","amount":"9.99","type":"pending"},"countryCode":"US","currencyCode":"USD","supportedCountries":["US","GB","IE"],"shippingMethods":[{"label":"Free Shipping","detail":"Arrives in 5 to 7 days","amount":"0.00","identifier":"FreeShip"}]},"endpoints":{"paymentGatewayUrl":"https://messagingagentwidgets.herokuapp.com/apay/paymentGateway","fallbackUrl":"https://messagingagentwidgets.herokuapp.com/apay/paymentGateway"},"merchantSession":{"epochTimestamp":1570140072871,"expiresAt":1570147272871,"merchantSessionIdentifier":"PSH153C6B48701ECB01FBCE2033BC4A9_CCE257A9D27B425137DB49F602F3450D996C0811ED462EDCA0D7477FD","nonce":"674d32bd","merchantIdentifier":"B1555180A8F81806F7FBCEDB6DC10BC0CDCCE6AA15240F1CAF5CA745053","displayName":"MyStore","signature":"308006092a864886f70d010702a0803080020101310f300d06096086480165030402010500308006092a864886f70d0107010000a080308203e330820388a00302010202084c304149519d5436300a06082a8648ce3d040302307a312e302c06035504030c254170706c65204170706c69636174696f6e20496e746567726174696f6e204341202d20473331263024060355040b0c1d4170706c652043657274696669636174696f6e20417574686f726974793113301740a0c0a4170706c6520496e632e310b300906035504061302555302084c304149519d5436300d06096086480165030402010500a08195301806092a864886f70d010903310b06092a864886f70d010701301c06092a864886f70d010905310f170d3139313030333232303131325a302a06092a864886f70d010934311d301b300d06096086480165030402010500a10a06082a8648ce3d040302302f06092a864886f70d01090431220420e90186f308262f69651ebc99fcb395d9c964628621eeeef2ffee187c481e0c2b300a06082a8648ce3d04030204483046022100d69a15f8b93cbabcf3e82501bd539c2929559fa8ade55b21021a6a4dee6dccbe022100a02eb21c61ed20810e3cd02ea63c5cc82930e9f61d420942c5f66aa25bcdb58c000000000000","initiative":"messaging","initiativeContext":"https://messagingagentwidgets.herokuapp.com/apay/paymentGateway","signedFields":["merchantIdentifier","merchantSessionIdentifier","initiative","initiativeContext","displayName","nonce"]}},"requestIdentifier":"3feabbf7-80d2-499e-8be3-68d2c3713e0e"}}}]};
 			
-			// var bubblePayment = {
+			/******
+			
+			
+			var bubblePayment = {
   "type": "vertical",
   "tag": "button",
   "elements": [
@@ -120,6 +123,9 @@
         }
       ]
     }]}
+    
+    
+    *****/
 			
 			
 			var cmdName = lpTag.agentSDK.cmdNames.writeSC;
