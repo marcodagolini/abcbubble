@@ -126,8 +126,11 @@
 			var payload = {
 				json: bubblePayment
 			};
+			// lpTag.agentSDK.command(cmdName, payload, function (err) {
+				// outputLog.value = err ? err : 'done';
+			// });
 			lpTag.agentSDK.command(cmdName, payload, function (err) {
-				outputLog.value = err ? err : 'done';
+				console.log(err);
 			});
 		}
 				
